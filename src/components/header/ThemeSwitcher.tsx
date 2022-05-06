@@ -1,14 +1,14 @@
 import { useContext } from 'react'
-import ThemeContext from '../../contexts/ThemeContext'
+import ThemeContext, { Theme } from '../../contexts/ThemeContext'
 
 const ThemeSwitcher = () => {
-	const theme: string = useContext(ThemeContext)
+	const { theme, toggleTheme }: Theme = useContext(ThemeContext)
 
 	return (
 		<div>
 			<p>
 				You have {theme} theme.
-				<button> Switch theme </button>
+				<button onClick={toggleTheme}> Switch theme </button>
 			</p>
 		</div>
 	)

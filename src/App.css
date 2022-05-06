@@ -14,3 +14,13 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+
+.dark header {
+	background-color: #696C0D;
+	color: #FDFFC5;
+}
+
+.dark main {
+	color: hotpink;
+	background-color: #5C1840;
+}
